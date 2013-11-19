@@ -1,0 +1,24 @@
+{
+  "name": "mxhr.coffee",
+  "version": "0.0.0",
+  "homepage": "https://github.com/toruta39/mxhr.coffee",
+  "authors": [
+    "Joshua Zhang <toruta39@gmail.com>"
+  ],
+  "description": "A light-weight library for implementing MXHR client-side with JavaScript/CoffeeScript",
+  "main": "mxhr.js",
+  "keywords": [
+    "mxhr",
+    "coffeescript",
+    "xhr",
+    "ajax"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
