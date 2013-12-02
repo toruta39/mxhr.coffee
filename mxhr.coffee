@@ -131,6 +131,11 @@ do (window) ->
                 listeners[mime].push callback if typeof callback is 'function'
                 return @
             complete: (callback) -> @listen 'complete', callback
+            abort: ->
+                clearInterval timer
+                ping()
+                xhr.abort()
+                return
         }
 
     window.mxhr = mxhr

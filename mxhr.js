@@ -135,6 +135,11 @@
         },
         complete: function(callback) {
           return this.listen('complete', callback);
+        },
+        abort: function() {
+          clearInterval(timer);
+          ping();
+          xhr.abort();
         }
       };
     };
