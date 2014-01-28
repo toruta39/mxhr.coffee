@@ -92,13 +92,13 @@ do (window) ->
         # Since jqXHR doesn't provide onreadystatechange mechanism,
         # a native XHR object is needed.
         try
-            xhr = new ActiveXObject 'MSXML2.XMLHTTP.6.0'
+            xhr = new XMLHttpRequest()
         catch err
             try
-                xhr = new ActiveXObject 'MSXML3.XMLHTTP'
+                xhr = new ActiveXObject 'MSXML2.XMLHTTP.6.0'
             catch err
                 try
-                    xhr = new XMLHttpRequest()
+                    xhr = new ActiveXObject 'MSXML3.XMLHTTP'
                 catch err
                     throw new Error 'No supported version of XHR is found'
 
